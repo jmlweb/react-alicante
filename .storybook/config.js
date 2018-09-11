@@ -4,6 +4,7 @@ import { setDefaults as setInfoDefaults } from '@storybook/addon-info';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import { normalize } from 'polished';
 
+import { globalStyles, StyledWrapper } from '../src/App';
 import theme from '../src/theme';
 
 /**
@@ -16,23 +17,7 @@ setInfoDefaults({
 /**
  * Global decorator
  */
-injectGlobal`
-  ${normalize()};
-
-  html {
-    box-sizing: border-box;
-  }
-
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-`;
-
-const StyledWrapper = styled.div`
-  font-family: ${({ theme }) => theme.fonts.default};
-`;
+globalStyles();
 
 addDecorator(story => (
   <ThemeProvider theme={theme}>

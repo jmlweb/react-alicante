@@ -1,27 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { injectGlobal } from 'styled-components';
-import { normalize } from 'polished';
 
+import StyledWrapper from './StyledWrapper';
 import TopBar from './TopBar';
+import globalStyles from './globalStyles';
 
-injectGlobal`
-  ${normalize()};
-
-  html {
-    box-sizing: border-box;
-  }
-
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-`;
-
-const StyledWrapper = styled.div`
-  font-family: ${({ theme }) => theme.fonts.default};
-`;
+globalStyles();
 
 const App = ({ children }) => (
   <StyledWrapper>
