@@ -6,7 +6,7 @@ import { Button } from '../../components';
 import buttonColorsText from '../markdown/buttonColors.md';
 import { HorizontalGalleryWrapper } from '../decorators';
 
-storiesOf('01. Components/Button', module)
+storiesOf('Components/Button', module)
   .addDecorator(HorizontalGalleryWrapper)
   .add(
     'colors',
