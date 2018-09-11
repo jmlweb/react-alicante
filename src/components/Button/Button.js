@@ -34,8 +34,16 @@ const Button = styled.button`
   border-color: ${styledMap(defaultColors)};
   color: #fff;
   font-family: Roboto, serif;
-  font-size: 16px;
-  padding: 10px 15px;
+  font-size: ${styledMap({
+    sm: '13px',
+    lg: '18px',
+    default: '16px',
+  })};
+  padding: ${styledMap({
+    sm: '5px 10px',
+    lg: '15px 20px',
+    default: '10px 15px',
+  })};
 
   &:hover {
     background-color: ${styledMap(defaultColors)};

@@ -21,6 +21,8 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
+    "@storybook/addon-info": "^3.4.10",
+    "@storybook/addon-notes": "^3.4.10",
     "@storybook/react": "^3.4.10",
     "babel-eslint": "^9.0.0",
     "eslint": "^5.5.0",
