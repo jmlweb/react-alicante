@@ -1,8 +1,8 @@
 import React from 'react';
 import { configure, addDecorator } from '@storybook/react';
 import { setDefaults as setInfoDefaults } from '@storybook/addon-info';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-import { normalize } from 'polished';
+import { ThemeProvider } from 'styled-components';
+import { setOptions } from '@storybook/addon-options';
 
 import { globalStyles, StyledWrapper } from '../src/App';
 import theme from '../src/theme';
@@ -24,6 +24,15 @@ addDecorator(story => (
     <StyledWrapper>{story()}</StyledWrapper>
   </ThemeProvider>
 ));
+
+/**
+ * Options defaults
+ */
+setOptions({
+  name: 'Desksurfer',
+  addonPanelInRight: true,
+  selectedAddonPanel: 'knobs',
+})
 
 /**
  * Load Stories
