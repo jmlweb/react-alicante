@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Button colors 1`] = `
+<div
+  className="sc-bdVaJa ethOL"
+>
+  <div
+    className="sc-bZQynM dRNiVE"
+  >
+    <div
+      className="sc-gzVnrw ghjJoX"
+    >
+      <button
+        className="sc-bwzfXH kaLVyT"
+        onClick={[Function]}
+      >
+        Default button
+      </button>
+       
+      <button
+        className="sc-bwzfXH eGXFwu"
+        onClick={[Function]}
+      >
+        Primary button
+      </button>
+       
+      <button
+        className="sc-bwzfXH jGxWBf"
+        onClick={[Function]}
+      >
+        Danger button
+      </button>
+       
+      <a
+        className="sc-htoDjs bFDClL"
+        href="/"
+        onClick={[Function]}
+      >
+        Check sizes
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Button editor 1`] = `
+<div
+  className="sc-bdVaJa ethOL"
+>
+  <div
+    className="sc-bZQynM dRNiVE"
+  >
+    <div
+      className="sc-gzVnrw ghjJoX"
+    >
+      <button
+        className="sc-bwzfXH kaLVyT"
+        default={true}
+      >
+        Click me!
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Button sizes 1`] = `
+<div
+  className="sc-bdVaJa ethOL"
+>
+  <div
+    className="sc-bZQynM dRNiVE"
+  >
+    <div
+      className="sc-gzVnrw ghjJoX"
+    >
+      <button
+        className="sc-bwzfXH lelkkv"
+        onClick={[Function]}
+      >
+        Small button
+      </button>
+       
+      <button
+        className="sc-bwzfXH kaLVyT"
+        onClick={[Function]}
+      >
+        Default button
+      </button>
+       
+      <button
+        className="sc-bwzfXH hdqldY"
+        onClick={[Function]}
+      >
+        Large button
+      </button>
+       
+      <a
+        className="sc-htoDjs bFDClL"
+        href="/"
+        onClick={[Function]}
+      >
+        Check colors
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Guide intro 1`] = `
+<div
+  className="sc-bdVaJa ethOL"
+>
+  <div
+    className="sc-bZQynM dRNiVE"
+  >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "welcome.md",
+        }
+      }
+    />
+  </div>
+</div>
+`;
