@@ -6,7 +6,7 @@ const Home = () => (
   <div>
     Home
     {' '}
-    <Button danger>Some content</Button>
+    <Button variant="danger">Some content</Button>
   </div>
 );
 

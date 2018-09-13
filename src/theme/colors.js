@@ -1,5 +1,5 @@
 import {
-  keys, merge, omit, pipe, reduce,
+  keys, merge, pipe, reduce,
 } from 'ramda';
 import { tint, shade } from 'polished';
 
@@ -39,7 +39,6 @@ const tonesReducer = (acc, curr) => {
 const generateColors = pipe(
   keys,
   reduce(tonesReducer, {}),
-  omit(['blackLight', 'blackDark', 'whiteLight', 'whiteDark']),
 );
 
 export default generateColors(BASE_COLORS);

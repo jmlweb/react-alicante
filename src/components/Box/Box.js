@@ -4,6 +4,7 @@ import {
   space,
   color,
   flex,
+  fontSize,
   maxWidth,
   minWidth,
   size,
@@ -34,6 +35,7 @@ const Box = styled(tag.div)`
   ${space}
   ${color}
   ${flex}
+  ${fontSize}
   ${maxWidth}
   ${minWidth}
   ${size}

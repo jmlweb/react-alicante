@@ -34,6 +34,24 @@ export default theme => injectGlobal`
     font-weight: ${theme.fontWeights.bold};
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   h1 {
     font-size: ${theme.fontSizes[5]}px;
     @media(min-width: ${theme.breakpoints[theme.defaults.fontChangeBp]}) {

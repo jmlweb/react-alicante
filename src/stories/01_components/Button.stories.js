@@ -18,9 +18,9 @@ storiesOf('Components/Button', module)
       <Fragment>
         <Button onClick={action('buttonClick')}>Default button</Button>
         {' '}
-        <Button primary onClick={action('buttonClick')}>Primary button</Button>
+        <Button variant="primary" onClick={action('buttonClick')}>Primary button</Button>
         {' '}
-        <Button onClick={action('buttonClick')} danger>Danger button</Button>
+        <Button variant="danger" onClick={action('buttonClick')}>Danger button</Button>
         {' '}
         <StoryLinker story="sizes">Check sizes</StoryLinker>
       </Fragment>
@@ -28,11 +28,11 @@ storiesOf('Components/Button', module)
   )
   .add('sizes', () => (
     <Fragment>
-      <Button onClick={action('buttonClick')} sm>Small button</Button>
+      <Button size="sm" onClick={action('buttonClick')}>Small button</Button>
       {' '}
-      <Button onClick={action('buttonClick')} md>Default button</Button>
+      <Button size="md" onClick={action('buttonClick')}>Default button</Button>
       {' '}
-      <Button onClick={action('buttonClick')} lg>Large button</Button>
+      <Button size="lg" onClick={action('buttonClick')}>Large button</Button>
       {' '}
       <StoryLinker story="colors">Check colors</StoryLinker>
     </Fragment>
@@ -42,21 +42,17 @@ storiesOf('Components/Button', module)
     const colorOptions = {
       primary: 'primary',
       danger: 'danger',
-      default: 'gray',
+      mediumGray: 'mediumGray',
     };
     const sizeOptions = {
       sm: 'sm',
       md: 'md',
       lg: 'lg',
     };
-    const color = select('color', colorOptions, 'default');
+    const color = select('color', colorOptions, 'primary');
     const size = select('size', sizeOptions, 'md');
     // we build props instead of props values
-    const props = {
-      [color]: true,
-      [size]: true,
-    };
     return (
-      <Button {...props}>{children}</Button>
+      <Button variant={color} size={size}>{children}</Button>
     );
   });
