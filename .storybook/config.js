@@ -17,7 +17,7 @@ setInfoDefaults({
 /**
  * Global decorator
  */
-globalStyles();
+globalStyles(theme);
 
 addDecorator(story => (
   <ThemeProvider theme={theme}>

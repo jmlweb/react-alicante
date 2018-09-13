@@ -17,7 +17,7 @@ const BASE_COLORS = {
  * - The color corresponding to that key
  * - A light version
  * - A dark version
- * 
+ *
  * Example: {
  *  primary: '#31CEA6',
  *  primaryLight: '#45d2ae',

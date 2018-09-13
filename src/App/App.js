@@ -1,21 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withTheme } from 'styled-components';
 
 import StyledWrapper from './StyledWrapper';
 import TopBar from './TopBar';
 import globalStyles from './globalStyles';
 
-globalStyles();
-
-const App = ({ children }) => (
-  <StyledWrapper>
-    <TopBar />
-    {children}
-  </StyledWrapper>
-);
+const App = ({ children, theme }) => {
+  globalStyles(theme);
+  return (
+    <StyledWrapper>
+      <TopBar />
+      {children}
+    </StyledWrapper>
+  );
+};
 
 App.propTypes = {
   children: PropTypes.node.isRequired,
+  theme: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
-export default App;
+export default withTheme(App);

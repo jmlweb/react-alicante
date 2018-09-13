@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
-  font-family: ${({ theme }) => theme.fonts.default};
+  max-width: ${({ theme }) => theme.maxWidths.main};
 `;
 
 export default StyledWrapper;
